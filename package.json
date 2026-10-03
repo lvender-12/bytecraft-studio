@@ -1,0 +1,24 @@
+{
+  "name": "bytecraft-studio",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "build": "node ./node_modules/tailwindcss/lib/cli.js -i ./src/css/tailwind.css -o ./assets/css/main.css",
+    "start": "python3 -m http.server 8000",
+    "tw-install": "npm install -D tailwindcss",
+    "tw-init": "npx tailwindcss init",
+    "tw-build": "npx tailwindcss -i ./src/css/tailwind.css -o ./assets/css/main.css --watch",
+    "tw-minify": "npx tailwindcss -o ./assets/css/main.min.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranyeh24/inazuma-tailwind.git"
+  },
+  "keywords": ["website development", "landing page"],
+  "author": "ByteCraft Studio",
+  "license": "MIT",
+  "description": "Website statis ByteCraft Studio, konsep bisnis jasa pembuatan website.",
+  "devDependencies": {
+    "tailwindcss": "^3.4.10"
+  }
+}
